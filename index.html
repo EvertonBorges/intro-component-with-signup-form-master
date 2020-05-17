@@ -9,34 +9,66 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  Learn to code by watching others
+  <main>
+    <section class="signup-text">
+      <h1 class="signup-text-title text-white">Learn to code by watching others</h1>
+      <p class="signup-text-body text-white">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section class="signup-form">
+      <div class="signup-form-text-try">
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </div>
+      <form class="signup-form-body">
+        <div class="input-group">
+          <div class="input">
+            <input class="input-field" type="text" name="firstName" id="idFirstName" placeholder="First Name">
+            <img class="error-icon" src="./images/icon-error.svg" alt="error">
+          </div>
+          <label class="error" for="">First Name cannot be empty</label>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <input class="input-field" type="text" name="lastName" id="idLastName" placeholder="Last Name">
+            <img class="error-icon" src="./images/icon-error.svg" alt="error">
+          </div>
+          <label class="error" for="">Last Name cannot be empty</label>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <input class="input-field" type="text" name="emailAddress" id="idEmailAddress" placeholder="Email Address">
+            <img class="error-icon" src="./images/icon-error.svg" alt="error">
+          </div>
+          <label class="error" for="">Looks like this is not an email</label>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <input class="input-field" type="password" name="password" id="idPassword" placeholder="Password">
+            <img class="error-icon" src="./images/icon-error.svg" alt="error">
+          </div>
+          <label class="error" for="">Password cannot be empty</label>
+        </div>
+        <button class="btn btn-submit" type="submit">Claim your free trial</button>
+        <h6 class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></h6>
+      </form>
+    </section>
+  </main>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
   
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <p class="footer">
+      Challenge by <a class="footer-link" target="_blank" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a class="footer-link" target="_blank" href="#">Everton Borges</a>
+      repository in <a class="footer-link" target="_blank" href="#">github</a>.
     </p>
-  </footer>
+  </footer> 
+ 
 </body>
 </html>
