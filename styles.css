@@ -71,6 +71,10 @@ input {
     width: 100%;
 }
 
+.input-error {
+    border: solid 2px hsl(0, 100%, 74%);
+}
+
 .input {
     display: flex;
     justify-content: space-between;
@@ -138,6 +142,14 @@ input {
     border: inset rgba(0, 0, 0, 0.1);
     border-width: 1px 1px 4px 1px;
     background-color: hsl(154, 59%, 51%);
+}
+
+.btn-submit:enabled {
+    opacity: 1;
+}
+
+.btn-submit:disabled {
+    opacity: 0.75;
 }
 
 .terms {

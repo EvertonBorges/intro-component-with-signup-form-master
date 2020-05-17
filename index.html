@@ -26,41 +26,64 @@
       <div class="signup-form-text-try">
         Try it free 7 days <span>then $20/mo. thereafter</span>
       </div>
-      <form class="signup-form-body">
+      <form action="/" name="myForm" onsubmit="return validateForm()" class="signup-form-body">
         <div class="input-group">
           <div class="input">
-            <input class="input-field" type="text" name="firstName" id="idFirstName" placeholder="First Name">
+            <input 
+              class="input-field"
+              onfocus="onFocusEvent(event.path[2]);"
+              onblur="onBlurEvent(event.path[2]);"
+              type="text"
+              name="firstName"
+              placeholder="First Name">
             <img class="error-icon" src="./images/icon-error.svg" alt="error">
           </div>
-          <label class="error" for="">First Name cannot be empty</label>
+          <label class="error" for="firstName">First Name cannot be empty</label>
         </div>
         <div class="input-group">
           <div class="input">
-            <input class="input-field" type="text" name="lastName" id="idLastName" placeholder="Last Name">
+            <input 
+              class="input-field"
+              onfocus="onFocusEvent(event.path[2]);"
+              onblur="onBlurEvent(event.path[2]);"
+              type="text"
+              name="lastName"
+              placeholder="Last Name">
             <img class="error-icon" src="./images/icon-error.svg" alt="error">
           </div>
-          <label class="error" for="">Last Name cannot be empty</label>
+          <label class="error" for="lastName">Last Name cannot be empty</label>
         </div>
         <div class="input-group">
           <div class="input">
-            <input class="input-field" type="text" name="emailAddress" id="idEmailAddress" placeholder="Email Address">
+            <input 
+              class="input-field"
+              onfocus="onFocusEvent(event.path[2]);"
+              onblur="onBlurEvent(event.path[2]);"
+              type="text"
+              name="emailAddress"
+              placeholder="Email Address">
             <img class="error-icon" src="./images/icon-error.svg" alt="error">
           </div>
-          <label class="error" for="">Looks like this is not an email</label>
+          <label class="error" for="emailAddress">Looks like this is not an email</label>
         </div>
         <div class="input-group">
           <div class="input">
-            <input class="input-field" type="password" name="password" id="idPassword" placeholder="Password">
+            <input 
+              class="input-field"
+              onfocus="onFocusEvent(event.path[2]);"
+              onblur="onBlurEvent(event.path[2]);"
+              type="password"
+              name="password"
+              placeholder="Password">
             <img class="error-icon" src="./images/icon-error.svg" alt="error">
           </div>
-          <label class="error" for="">Password cannot be empty</label>
+          <label class="error" for="password">Password cannot be empty</label>
         </div>
-        <button class="btn btn-submit" type="submit">Claim your free trial</button>
+        <button class="btn btn-submit" type="submit" disabled>Claim your free trial</button>
         <h6 class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></h6>
       </form>
     </section>
   </main>
-
   
   <footer>
     <p class="footer">
@@ -68,7 +91,9 @@
       Coded by <a class="footer-link" target="_blank" href="#">Everton Borges</a>
       repository in <a class="footer-link" target="_blank" href="#">github</a>.
     </p>
-  </footer> 
+  </footer>
+
+  <script src="./script.js"></script>
  
 </body>
 </html>
